@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ProjetoEvento.ClassePai.ClassesFilhas
 {
@@ -52,21 +53,31 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
         public override string Pesquisar(string TituloShow)
         {
             string Resultado = "";
-            StreamReader ler = null;
             try
             {
-                ler = new StreamReader("show.csv", Encoding.Default);
-                string linha = "";
-                while ((linha = ler.ReadLine()) != null)
+                //ler todas a linhas
+                string[] linhas = System.IO.File.ReadAllLines("show.csv");
+                //array das colunas
+                string[] coluna = new string[8];
+                //funcao que recebe parametro para comparacao na busca
+                Regex regex = new Regex(@TituloShow.ToUpper());
+                Resultado = "";
+                //laco para fazer a busca
+                foreach (var linha in linhas)
                 {
-                    string[] dados = linha.Split(';');
-                    if (dados[3] == TituloShow)
+                    //quebra a linha em colunas
+                    coluna = linha.Split(';');
+                    //busca na string da primeira coluna e compara se texto digitado bate
+                    Match match = regex.Match(coluna[0].ToUpper());
+                    //if tiver alguma correspondencia
+                    if (match.Success)
                     {
-                        Resultado = linha;
+                        //seta a linha e substitui as virgulas por espaco
+                        Resultado = linha.Replace(";"," ");
                         break;
                     }
-                    Resultado = "Titulo nao encontrada";
-                }
+                    Resultado = "Titulo nao encontrado";
+            }
             }
             catch (Exception ex)
             {
@@ -74,7 +85,7 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
             }
             finally
             {
-                ler.Close();
+                //ler.Close();
             }
             return Resultado;
         }

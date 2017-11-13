@@ -177,23 +177,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\44063076806\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\bruno afonso\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44063076806\\backend\\ProjetoEvento\\ProjetoEvento.csproj",
+      "projectUniqueName": "C:\\Users\\bruno afonso\\Desktop\\evento\\ProjetoEvento\\ProjetoEvento.csproj",
       "projectName": "ProjetoEvento",
-      "projectPath": "C:\\Users\\44063076806\\backend\\ProjetoEvento\\ProjetoEvento.csproj",
-      "packagesPath": "C:\\Users\\44063076806\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44063076806\\backend\\ProjetoEvento\\obj\\",
+      "projectPath": "C:\\Users\\bruno afonso\\Desktop\\evento\\ProjetoEvento\\ProjetoEvento.csproj",
+      "packagesPath": "C:\\Users\\bruno afonso\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bruno afonso\\Desktop\\evento\\ProjetoEvento\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\44063076806\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\bruno afonso\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

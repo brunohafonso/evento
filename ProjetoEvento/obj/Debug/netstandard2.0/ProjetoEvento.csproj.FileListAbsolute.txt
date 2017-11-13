@@ -6,3 +6,11 @@ C:\Users\44063076806\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvent
 C:\Users\44063076806\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.AssemblyInfo.cs
 C:\Users\44063076806\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.dll
 C:\Users\44063076806\backend\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.pdb
+C:\Users\bruno afonso\Desktop\evento\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.deps.json
+C:\Users\bruno afonso\Desktop\evento\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.dll
+C:\Users\bruno afonso\Desktop\evento\ProjetoEvento\bin\Debug\netstandard2.0\ProjetoEvento.pdb
+C:\Users\bruno afonso\Desktop\evento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.csproj.CoreCompileInputs.cache
+C:\Users\bruno afonso\Desktop\evento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.AssemblyInfoInputs.cache
+C:\Users\bruno afonso\Desktop\evento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.AssemblyInfo.cs
+C:\Users\bruno afonso\Desktop\evento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.dll
+C:\Users\bruno afonso\Desktop\evento\ProjetoEvento\obj\Debug\netstandard2.0\ProjetoEvento.pdb

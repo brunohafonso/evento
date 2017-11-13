@@ -50,7 +50,7 @@ namespace ProjetoEventoConsole
                     cadastrarShow();
                 break;
                 case "2":
-
+                    pesquisarShow();
                 break;
                 case "3":
                     MenuPrincipal();
@@ -82,6 +82,18 @@ namespace ProjetoEventoConsole
             string GeneroMusical = Console.ReadLine();
             Show show = new Show(Titulo, Local, Lotacao, Data, Duracao, Classificacao, Artista, GeneroMusical);
             show.Cadastrar();
+        }
+        static void pesquisarShow() {
+            System.Console.WriteLine("---- pesquisando show por titulo ----");
+            System.Console.WriteLine("Digite o titulo do show, pelo menos 3 caracteres");
+            string TituloShow = Console.ReadLine();
+            while(TituloShow.Length < 3) {
+                System.Console.WriteLine("---- pesquisando show por titulo ----");
+                System.Console.WriteLine("Digite o titulo do show, pelo menos 3 caracteres");
+                TituloShow = Console.ReadLine();
+            }
+            Show show = new Show();
+            System.Console.WriteLine(show.Pesquisar(TituloShow));  
         }
     }
 }

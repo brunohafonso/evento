@@ -10,3 +10,15 @@ C:\Users\44063076806\backend\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\Projet
 C:\Users\44063076806\backend\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\ProjetoEventoConsole.AssemblyInfo.cs
 C:\Users\44063076806\backend\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\ProjetoEventoConsole.dll
 C:\Users\44063076806\backend\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\ProjetoEventoConsole.pdb
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\bin\Debug\netcoreapp2.0\ProjetoEventoConsole.deps.json
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\bin\Debug\netcoreapp2.0\ProjetoEventoConsole.runtimeconfig.json
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\bin\Debug\netcoreapp2.0\ProjetoEventoConsole.runtimeconfig.dev.json
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\bin\Debug\netcoreapp2.0\ProjetoEventoConsole.dll
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\bin\Debug\netcoreapp2.0\ProjetoEventoConsole.pdb
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\bin\Debug\netcoreapp2.0\ProjetoEvento.dll
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\bin\Debug\netcoreapp2.0\ProjetoEvento.pdb
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\ProjetoEventoConsole.csproj.CoreCompileInputs.cache
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\ProjetoEventoConsole.AssemblyInfoInputs.cache
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\ProjetoEventoConsole.AssemblyInfo.cs
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\ProjetoEventoConsole.dll
+C:\Users\bruno afonso\Desktop\evento\ProjetoEventoConsole\obj\Debug\netcoreapp2.0\ProjetoEventoConsole.pdb
