@@ -81,19 +81,29 @@ namespace ProjetoEventoConsole
             System.Console.WriteLine("Digite o genero musical");
             string GeneroMusical = Console.ReadLine();
             Show show = new Show(Titulo, Local, Lotacao, Data, Duracao, Classificacao, Artista, GeneroMusical);
-            show.Cadastrar();
+            bool sucesso = show.Cadastrar();
+            if(sucesso) {
+                System.Console.WriteLine("Evento cadastrado com sucesso.");
+            } else {
+                System.Console.WriteLine("ocorreu um erro ao cadastrar o evento.");
+            }
         }
         static void pesquisarShow() {
-            System.Console.WriteLine("---- pesquisando show por titulo ----");
-            System.Console.WriteLine("Digite o titulo do show, pelo menos 3 caracteres");
-            string TituloShow = Console.ReadLine();
-            while(TituloShow.Length < 3) {
-                System.Console.WriteLine("---- pesquisando show por titulo ----");
-                System.Console.WriteLine("Digite o titulo do show, pelo menos 3 caracteres");
-                TituloShow = Console.ReadLine();
+            System.Console.WriteLine("---- pesquisando show ----");
+            System.Console.WriteLine("Digite o titulo ou a data do show.");
+            string dadoPesquisado = Console.ReadLine();
+            bool converter = DateTime.TryParse(dadoPesquisado, out DateTime dadoPesquisadoData);
+            while(dadoPesquisado.Length < 0) {
+                System.Console.WriteLine("---- pesquisando show ----");
+                System.Console.WriteLine("Digite o titulo ou data do show.");
+                dadoPesquisado = Console.ReadLine();
             }
             Show show = new Show();
-            System.Console.WriteLine(show.Pesquisar(TituloShow));  
+            if(converter) {
+                System.Console.WriteLine(show.Pesquisar(dadoPesquisadoData));
+            } else {
+                System.Console.WriteLine(show.Pesquisar(dadoPesquisado));  
+            }
         }
     }
 }

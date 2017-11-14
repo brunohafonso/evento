@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\ProjetoEvento\ProjetoEvento.csproj" />
+    <ProjectReference Include="c:\Users\44063076806\backend\evento\ProjetoEvento\ProjetoEvento.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -61,7 +61,6 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
                 string[] coluna = new string[8];
                 //funcao que recebe parametro para comparacao na busca
                 Regex regex = new Regex(@TituloShow.ToUpper());
-                Resultado = "";
                 //laco para fazer a busca
                 foreach (var linha in linhas)
                 {
@@ -70,10 +69,12 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
                     //busca na string da primeira coluna e compara se texto digitado bate
                     Match match = regex.Match(coluna[0].ToUpper());
                     //if tiver alguma correspondencia
+                    var i = 0;
                     if (match.Success)
                     {
                         //seta a linha e substitui as virgulas por espaco
                         Resultado = linha.Replace(";"," ");
+                        //System.Console.WriteLine(linha.Replace(";", " "));
                         break;
                     }
                     Resultado = "Titulo nao encontrado";
@@ -93,15 +94,14 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
         public override string Pesquisar(DateTime DataEvento)
         {
             string Resultado = "";
-            StreamReader ler = null;
             try
             {
-                ler = new StreamReader("show.cs", Encoding.Default);
-                string linha = "";
-                while ((linha = ler.ReadLine()) != null)
+                string[] linhas = System.IO.File.ReadAllLines("show.csv");
+                string[] coluna = new string[8];
+                foreach (var linha in linhas)
                 {
                     string[] dados = linha.Split(';');
-                    if (dados[0] == Convert.ToString(DataEvento));
+                    if (Convert.ToDateTime(coluna[3]) == DataEvento);
                     {
                         Resultado = linha;
                         break;
@@ -115,7 +115,7 @@ namespace ProjetoEvento.ClassePai.ClassesFilhas
             }
             finally
             {
-                ler.Close();
+                //ler.Close();
             }
             return Resultado;
         }
